@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light;
+  --color-primary: #087f5b;
+  --color-primary-dark: #056044;
+  --color-text: #253238;
+  --color-background: #f4f7fb;
+  --color-surface: #fff;
+  --color-footer: #e8edf4;
+  --shadow-card: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #087f5b, #056044);
+  color: #fff;
+  text-align: center;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+main > h1 {
+  margin: 0 0 24px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+main > div {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+main > .renovation-links {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.renovation-links ul {
+  max-width: 600px;
+  margin: 20px auto 0;
+  padding: 18px 18px 18px 42px;
+  border-radius: 10px;
+  background: #e8f3ee;
+  text-align: left;
+}
+
+.renovation-links li {
+  padding: 5px 0;
+  text-align: left;
+}
+
+a {
+  color: var(--color-primary-dark);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+a:focus-visible {
+  outline: 3px solid #f0b429;
+  outline-offset: 3px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding: 24px;
+  background: var(--color-footer);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 40px 20px;
+  }
+
+  main {
+    padding: 24px 14px;
+  }
+
+  main > div,
+  main > .renovation-links {
+    padding: 20px;
+  }
+}
